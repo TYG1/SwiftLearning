@@ -71,18 +71,12 @@ Swift's `switch` statement matches on a single case and ends execution of the `s
 var gradeNumber = 95
 var gradeLetter: String = ""
 switch gradeNumber {
-case 93:
-    fallthrough
-case 94:
-    fallthrough
-case 95:
-    fallthrough
-case 96:
-    fallthrough
-case 97:
-    fallthrough
-case 98:
-    fallthrough
+case 93: fallthrough
+case 94: fallthrough
+case 95: fallthrough
+case 96: fallthrough
+case 97: fallthrough
+case 98: fallthrough
 case 99:
     gradeLetter = "A"
 case 90:
@@ -110,7 +104,11 @@ gradeNumber = 100
 switch gradeNumber {
 case 100:
     gradeLetter = "A+"
+<<<<<<< .merge_file_uMvodv
 case 93..<100:
+=======
+case 93...99:
+>>>>>>> .merge_file_wLLF3O
     gradeLetter = "A"
 case 90..<93:
     gradeLetter = "A-"
@@ -181,13 +179,13 @@ The `switch` case statement can store values into constants or variables that ar
 switch gradeTuple {
 case (90...100, let letter):
     print("You got between 90% - 100%, or an \(letter)")
-case (80..<89, let letter):
+case (80...89, let letter):
     print("You got between 80% - 89%, or a \(letter)")
-case (70..<79, let letter):
+case (70...79, let letter):
     print("You got between 70% - 79%, or a \(letter)")
-case (60..<69, let letter):
+case (60...69, let letter):
     print("You got between 60% - 69%, or a \(letter)")
-case (50..<59, let letter):
+case (50...59, let letter):
     print("You got between 50% - 59%, or a \(letter)")
 case let (number, letter):
     print("You got a \(number)% or a \(letter)")
@@ -202,8 +200,12 @@ You can use a `where` clause to check for even more conditions.
 switch gradeTuple {
 case (100, _):
     print("You aced it!")
+<<<<<<< .merge_file_uMvodv
     // where String("ABCD").containsString(letter);
 case let (number, letter) where ["A", "B", "C", "D"].contains(letter):
+=======
+case let (number, letter) where "ABCD".containsString(letter):
+>>>>>>> .merge_file_wLLF3O
     print("You passed!")
 default:
     print("You failed!")
@@ -353,13 +355,13 @@ if #available(iOS 9, OSX 10.11, *) {
     print("statements to execute when running on lower platforms.")
 }
 /*:
-**Exercise:** You have a secret message to send. Write a playground that can encrypt strings with an alphabetical [caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher). This cipher can ignore numbers, symbols, and whitespace. Add a shift variable to indicate how many places to shift.
+**Exercise:** You have a secret message to send. Write a playground that can encrypt strings with an alphabetical [caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher). This cipher can ignore numbers, symbols, and whitespace.
 >> **Example Output:**
 * Decrypted: Nearly all men can stand adversity, but if you want to test a man's character, give him power
 * Encrypted: arneyl nyy zra pna fgnaq nqirefvgl, ohg vs lbh jnag gb grfg n zna'f punenpgre, tvir uvz cbjre
 >> **Constraints:**
-* Use a `switch` statment
-* Use a loop statement
+* The encrypted and decrypted text is case sensitive
+* Add a shift variable to indicate how many places to shift
 */
 /*:
 **Checkpoint:**

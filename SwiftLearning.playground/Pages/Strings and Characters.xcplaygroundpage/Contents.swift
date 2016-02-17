@@ -41,6 +41,7 @@ All Strings have attributes called properties that provide you the ability to re
 //: **About String Indices** Strings in swift have a property of the `Index` data type that enable you to execute statements on `Character`s of the `String`. The `Index` data type provides methods (more on methods in [Functions](Functions) and - [Classes & Structures](Classes%20and%20Structures)) such as `successor()` and `predecessor()`.
 /*:
 **Experiment**: Take a moment to learn about the methods on the `Index` data type.
+
 */
 let startPlus1 = abeQuote.startIndex.successor()                    // get the next `Index` starting with the startIndex
 let endMinus1 = abeQuote.endIndex.predecessor()                     // get the previous `Index` starting with the endIndex
@@ -53,7 +54,7 @@ abeQuote.characters.count == abeQuote.startIndex.distanceTo(abeQuote.endIndex)
 //: Use `startIndex` to get the index of the starting position of a String.
 print("The start index is \(abeQuote.startIndex)")
 //: Use `endIndex` to get the index of the ending position of a String.
-print("The start index is \(abeQuote.endIndex)")
+print("The endIndex index is \(abeQuote.endIndex)")
 //: Use `isEmpty` to determine if a String has a value.
 print("The string is empty? = \(abeQuote.isEmpty)")
 
@@ -176,6 +177,10 @@ print(test)
 /*:
 **Checkpoint:**
 At this point, you should be able to create, mutate, and execute statements on `String`s and `Character`s data types. You also should understand how to work with the `Index` data type of a `String`.
+*/
+/*:
+**Supporting Chapters:**
+- [Strings and Characters](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/StringsAndCharacters.html)
 */
 /*:
 [Table of Contents](Table%20of%20Contents) | [Previous](@previous) | [Next](@next)

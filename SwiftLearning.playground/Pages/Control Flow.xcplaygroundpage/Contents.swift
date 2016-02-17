@@ -106,11 +106,11 @@ print(gradeLetter)
 ### Interval Matching
 The value in the `switch` case statement can be checked to determine if the value is included in a specified range.
 */
-gradeNumber = 93
+gradeNumber = 100
 switch gradeNumber {
 case 100:
     gradeLetter = "A+"
-case 93..<99:
+case 93..<100:
     gradeLetter = "A"
 case 90..<93:
     gradeLetter = "A-"
@@ -139,7 +139,7 @@ let gradeTuple = (gradeNumber, gradeLetter)
 switch gradeTuple {
 case (100, _):
     print("You get an A+")
-case (93..<99, _):
+case (93...99, _):
     print("You get an A")
 case (90..<93, _):
     print("You get an A-")
@@ -202,6 +202,7 @@ You can use a `where` clause to check for even more conditions.
 switch gradeTuple {
 case (100, _):
     print("You aced it!")
+    // where String("ABCD").containsString(letter);
 case let (number, letter) where ["A", "B", "C", "D"].contains(letter):
     print("You passed!")
 default:
@@ -218,6 +219,10 @@ Two `for` looping statements that let you execute code blocks a certain number o
 ### For-In
 The `for-in` loop executes a set of statements for each item in a list or sequence of items.
 */
+
+
+//for element in array/tuple
+
 for grade in "ABCDF".characters {
     print(grade)
 }
@@ -229,8 +234,12 @@ for index in 0..<5 {
 ### For
 The `for` loop executes a set of statements until a specific condition is met, usually by incrementing a counter each time the loop ends.
 */
-for var index = 0; index < 5; ++index {
+var i = 0
+
+for var index = 0; index < 5; i++ {
     print(index)
+    
+    print(i)
 }
 //: The `for` loop has 3 parts:
 /*:
@@ -247,6 +256,7 @@ for var index = 0; index < 5; ++index {
 The `while` loop evaluates its condition at the beginning of each iteration through the loop.
 */
 var index = 0
+
 while (index < 5) {
     
     print(index)

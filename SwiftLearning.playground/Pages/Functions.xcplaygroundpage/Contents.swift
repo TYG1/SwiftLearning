@@ -53,6 +53,8 @@ func sayHiTeacher2(name: String, className: String) {
     print("Hi \(name), from my \(className) class");
 }
 sayHiTeacher2("Mr. Sheets", className: "Swift")
+
+
 //: The above statement creates a function `sayHiTeacher2` defined with accepting 1 parameter of type String.
 //: > **Experiment**: Create and call a function to print your name and age. Define the function with a name of your choice, with a parameter of a `String` and `Int` data types and no return value.
 
@@ -64,11 +66,11 @@ There are two possible names you can give parameters when defining a function. T
 ### Specifying External Parameter Names
 *External* parameter names are exposed to the caller of the function. *External* and *local* parameter names don't have to be the same and by default the first parameter doesn't have an external name and all subsequent *local* names are also the *external* names. The `sayHiTeacher2` function is an example of a function omitting the *external* name for the first parameter and using the default external name for the second parameter.
 */
-func sayHiTeacher3(teacherName name: String, className: String) {
+func sayHiTeacher3(teacherName name: String, tmpName className: String) {
     
     print("Hi \(name), from my \(className) class");
 }
-sayHiTeacher3(teacherName: "Mr. Sheets", className: "Swift")
+sayHiTeacher3(teacherName: "Mr. Sheets", tmpName: "Swift")
 /*:
 ### Omitting External Parameter Names
 You can omit *external* names by using the underscore `_` in front of second or subsequent parameters.
@@ -77,6 +79,7 @@ func sayHiTeacher4(name: String, _ className: String) {
     
     print("Hi \(name), from my \(className) class");
 }
+
 sayHiTeacher4("Mr. Sheets", "Swift")
 /*:
 ### Default Parameter Values

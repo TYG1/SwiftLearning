@@ -27,10 +27,9 @@ func printGrade(grade: (Int, String)) {
     
     print("Your grade is \(grade.0) or a \(grade.1)")
 }
-
 printGrade((101, "A"))
 printGrade((55, "E"))
-printGrade((94, "A"))
+printGrade((94, "F"))
 /*:
 Above we validate the grade number and grade letter using a `guard` statement and only executing the correct print statement if the grade number and grade letter are in the correct range.
 */
@@ -280,6 +279,9 @@ for times in 0..<10 { call() }
 ## Creating Closures
 Creating a closure is just like creating a function. The only difference being what constants and variables the closure can access.
 */
+//Use these functions for the Exercise 5
+//look to underscore js, ruby, etc for examples of how to create the functions to access the data structures.
+
 func each(items: [String], closure: (item: String, index: Int) -> Void) {
 
     func iterator(items: [String], closure: (item: String) -> Void) {

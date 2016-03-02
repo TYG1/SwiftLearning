@@ -268,6 +268,8 @@ Above we rewrote the `saySomething` *global* function as `saySomethingNested`, *
 */
 /*:
 **Exercise:** Create a playground with pages with each playground page consisting of the previous four exercises. Refactor each exercise leveraging collection types and functions.
+>> **Constraints:**
+Create a swift file containing your functions for each exercise in the **Sources** directory. Make sure each function has the keyword `public` in front of the keyword `func`.
 */
 /*:
 **Checkpoint:**
@@ -275,7 +277,7 @@ At this point, you should have a good understanding of calling and creating func
 */
 /*:
 **Keywords to remember:**
-- `func` = to declare a function
+- `func` = to create a function
 - `inout` = changing a value of a parameter will change the value of the argument
 - `return` = exiting a function passing to the caller a potential value
 */

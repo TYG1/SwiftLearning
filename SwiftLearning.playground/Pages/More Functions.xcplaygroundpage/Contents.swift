@@ -182,6 +182,12 @@ The above function `sortFamily` is a closure that is later passed in as an argum
 let inferring = family.sort({ element1, element2 in return element1.name < element2.name })
 
 print(inferring)
+
+
+
+
+
+
 //: Above we don't need to include the definition of `element1` and `element2` because they are inferred from of the context, `family` consisting of data types of `(String, String, Int)`
 /*:
 ### Returning without writing it
@@ -198,6 +204,10 @@ For inline closures using the closure expression syntax, Swift automatically pro
 let shorthand = family.sort({ $0.name < $1.name })
 
 print(shorthand)
+
+
+
+
 //: Above we use the shorthand argument names, such as `$0` and `$1` to access the argument values, allowing us to omit the argument list from the definition.
 /*:
 ### Even more terse... Operator Functions

@@ -71,6 +71,7 @@ case .SixPlus(let hours, let time):
     print("You spent \(hours) hours studying, in the 6+ hours range, mostly in the \(time)")
 }
 
+
 if case let HoursStudying.SixPlus(hours, time) = studying {
     print("You spent \(hours) hours studying, in the 6+ hours range, mostly in the \(time)")
 }

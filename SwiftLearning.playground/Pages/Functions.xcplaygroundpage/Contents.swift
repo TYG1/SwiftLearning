@@ -1,12 +1,8 @@
 /*:
-[Table of Contents](Table%20of%20Contents) | [Previous](@previous) | [Next](@next)
-*/
-/*:
-# Functions
-*/
-/*:
-> **Session Overview:**
-> Functions are statements of code grouped together to provide readability, reusability, and modularity within your program. The Swift Standard Library provides functions that we have already used within previous Playgrounds. Please visit The Swift Standard Library [Functions](https://developer.apple.com/library/prerelease/mac/documentation/Swift/Reference/Swift_StandardLibrary_Functions/index.html#//apple_ref/doc/uid/TP40016052) online resource to see the full list of global functions available to your programs.
+ [Table of Contents](@first) | [Previous](@previous) | [Next](@next)
+ - - -
+ # Functions
+ * callout(Session Overview): Functions are statements of code grouped together to provide readability, reusability, and modularity within your program. The Swift Standard Library provides functions that we have already used within previous Playgrounds. Please visit The Swift Standard Library [Functions](https://developer.apple.com/library/prerelease/mac/documentation/Swift/Reference/Swift_StandardLibrary_Functions/index.html#//apple_ref/doc/uid/TP40016052) online resource to see the full list of global functions available to your programs.
 */
 import Foundation
 /*:
@@ -267,24 +263,19 @@ print(saySomethingNested(justMet: false)("Jason"))
 Above we rewrote the `saySomething` *global* function as `saySomethingNested`, *nesting* functions `hello` and `goodBye` and return the correct nested function.
 */
 /*:
-**Exercise:** Create a playground with pages with each playground page consisting of the previous four exercises. Refactor each exercise leveraging collection types and functions.
->> **Constraints:**
-Create a swift file containing your functions for each exercise in the **Sources** directory. Make sure each function has the keyword `public` in front of the keyword `func`.
-*/
-/*:
-**Checkpoint:**
-At this point, you should have a good understanding of calling and creating functions. Functions can be declared with or without parameters and with or without return values. Functions can also be used just like any other data type. You can assign functions to a constant or variable, pass functions as arguments to other functions and return functions from functions.
-*/
-/*:
-**Keywords to remember:**
-- `func` = to create a function
-- `inout` = changing a value of a parameter will change the value of the argument
-- `return` = exiting a function passing to the caller a potential value
-*/
-/*:
-**Supporting Chapters:**
-- [Functions](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Functions.html)
-*/
-/*:
-[Table of Contents](Table%20of%20Contents) | [Previous](@previous) | [Next](@next)
-*/
+ - - -
+ * callout(Exercise): Create a playground with pages with each playground page consisting of the previous four exercises. Refactor each exercise leveraging collection types and functions.
+
+ **Constraints:**
+ Create a swift file containing your functions for each exercise in the **Sources** directory. Make sure each function has the keyword `public` in front of the keyword `func`.
+ * callout(Checkpoint): At this point, you should have a good understanding of calling and creating functions. Functions can be declared with or without parameters and with or without return values. Functions can also be used just like any other data type. You can assign functions to a constant or variable, pass functions as arguments to other functions and return functions from functions.
+
+ **Keywords to remember:**
+ - `func` = to create a function
+ - `inout` = changing a value of a parameter will change the value of the argument
+ - `return` = exiting a function passing to the caller a potential value
+ * callout(Supporting Materials): Chapters and sections from the Guide and Vidoes from WWDC
+ - [Guide: Functions](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Functions.html)
+ - - -
+ [Table of Contents](@first) | [Previous](@previous) | [Next](@next)
+ */

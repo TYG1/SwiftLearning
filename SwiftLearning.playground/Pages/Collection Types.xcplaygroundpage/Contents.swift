@@ -1,12 +1,8 @@
 /*:
-[Table of Contents](Table%20of%20Contents) | [Previous](@previous) | [Next](@next)
-*/
-/*:
-# Collection Types
-*/
-/*:
-**Session Overview:**
-Often times in programs you need to group data into a single container where the number of items is unknown. Swift provides 3 main containers known as *collection types* for storing collections of values. *Arrays* are ordered collections of values, *Sets* are unordered collections of unique values, and *Dictionaries* are unordered collections of key-value associations. Please visit the Swift Programming Language Guide section on [Collection Types](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/CollectionTypes.html#//apple_ref/doc/uid/TP40014097-CH8-ID105) for more detail on collection types.
+ [Table of Contents](@first) | [Previous](@previous) | [Next](@next)
+ - - -
+ # Collection Types
+ * callout(Session Overview): Often times in programs you need to group data into a single container where the number of items is unknown. Swift provides 3 main containers known as *collection types* for storing collections of values. *Arrays* are ordered collections of values, *Sets* are unordered collections of unique values, and *Dictionaries* are unordered collections of key-value associations. Please visit the Swift Programming Language Guide section on [Collection Types](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/CollectionTypes.html#//apple_ref/doc/uid/TP40014097-CH8-ID105) for more detail on collection types.
 */
 import Foundation
 /*:
@@ -325,33 +321,30 @@ Above statements use the `for-in` loop to iterate over the `titles` giving you a
 //: > **Experiment**: Create a array of dictionaries and iterate over the array printing the key and value of each dictionary
 
 /*:
-**Exercise:** You have to record all the students for your school. Leveraging arrays, dictionaries, and sets, create table like containers for each class. Your classes are Math, Science, English and History with a total of 17 unique students with 7 students in each class. Print out each class roster and experiment with set operations, membership and equality.
->> **Example Output:**
-* `Math = Mathew Sheets, John Winters, Sam Smith`
-* `Science = Sam Smith, Carson Daily, Adam Aarons`
-* `Union of Math and Science = Mathew Sheets, John Winters, Sam Smith, Carson Daily, Adam Aarons`
->> **Constraints:**
-* Use Set Operations
-    * intersect
-    * exclusiveOr
-    * union
-    * subtract
-* Use Set Membership and Equality
-    * is equal
-    * isSubsetOf
-    * isSupersetOf
-    * isStrictSubsetOf
-    * isStrictSupersetOf
-    * isDisjointWith
-*/
-/*:
-**Checkpoint:**
-At this point, you should have a basic understanding of the collection types provided by the Swift programming language. Using arrays, you can store a collection of ordered values. Using sets, you can store a collection of unordered unique values. Using dictionaries, you can store a collection of key-value associations. With these three collection types, processing and manipulating data will be easier.
-*/
-/*:
-**Supporting Chapters:**
-- [Collection Types](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/CollectionTypes.html)
-*/
-/*:
-[Table of Contents](Table%20of%20Contents) | [Previous](@previous) | [Next](@next)
-*/
+ - - -
+ * callout(Exercise): You have to record all the students for your school. Leveraging arrays, dictionaries, and sets, create table like containers for each class. Your classes are Math, Science, English and History with a total of 17 unique students with 7 students in each class. Print out each class roster and experiment with set operations, membership and equality.
+
+ **Example Output:**
+ - `Math = Mathew Sheets, John Winters, Sam Smith`
+ - `Science = Sam Smith, Carson Daily, Adam Aarons`
+ - `Union of Math and Science = Mathew Sheets, John Winters, Sam Smith, Carson Daily, Adam Aarons`
+
+ **Constraints:**
+ - Use Set Operations
+    - intersect
+    - exclusiveOr
+    - union
+    - subtract
+ - Use Set Membership and Equality
+    - is equal
+    - isSubsetOf
+    - isSupersetOf
+    - isStrictSubsetOf
+    - isStrictSupersetOf
+    - isDisjointWith
+ * callout(Checkpoint): At this point, you should have a basic understanding of the collection types provided by the Swift programming language. Using arrays, you can store a collection of ordered values. Using sets, you can store a collection of unordered unique values. Using dictionaries, you can store a collection of key-value associations. With these three collection types, processing and manipulating data will be easier.
+ * callout(Supporting Materials): Chapters and sections from the Guide and Vidoes from WWDC
+ - [Guide: Collection Types](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/CollectionTypes.html)
+ - - -
+ [Table of Contents](@first) | [Previous](@previous) | [Next](@next)
+ */

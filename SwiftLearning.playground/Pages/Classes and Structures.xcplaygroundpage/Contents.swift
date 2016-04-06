@@ -222,6 +222,7 @@ struct Term4 {
     
     var start: NSDate
     var end: NSDate
+
 }
 /*:
 ### Default Initializer

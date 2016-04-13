@@ -15,7 +15,7 @@
         <page name='Protocols'/>
         <page name='Extensions'/>
         <page name='Generics'/>
-        <page name='JSON and Objects'/>
+        <page name='JSON and Instances'/>
         <page name='HTTP and ReST'/>
         <page name='License'/>
     </pages>

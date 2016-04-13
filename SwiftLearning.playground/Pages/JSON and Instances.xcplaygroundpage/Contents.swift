@@ -1,15 +1,14 @@
 /*:
  [Table of Contents](@first) | [Previous](@previous) | [Next](@next)
  - - -
- # HTTP & ReST
+ # JSON & Instances
  * callout(Session Overview):
  */
 import Foundation
 /*:
  * callout(Supporting Materials): Additional Resources For Further Reading
- - [NSURLSession](https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSURLSession_class/)
- - [ReST on Wikipedia](https://en.wikipedia.org/wiki/Representational_state_transfer)
- - [ReST API Tutorial](http://www.restapitutorial.com/)
+ - [JSON Org](http://www.json.org/)
+ - [NSJSONSerialization](https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSJSONSerialization_Class/index.html)
   - - -
  [Table of Contents](@first) | [Previous](@previous) | [Next](@next)
  */

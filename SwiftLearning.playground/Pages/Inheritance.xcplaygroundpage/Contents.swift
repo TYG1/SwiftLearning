@@ -101,7 +101,7 @@ class Daughter: Mother {
     init(age: Int, name: String, height: Float, hairColor: String, eyeColor: String) {
 
         self.age = age
-
+        
         super.init(name: name, height: height, hairColor: hairColor, eyeColor: eyeColor)
     }
 
@@ -140,6 +140,15 @@ class Grandson: Son {
 let grandson = Grandson(name: "Sam", height: 48, hairColor: "Blond", eyeColor: "Green")
 
 print(grandson.sayHello())
+
+// below is a function that accepts a Father as a parameter. A Grandson is acceptable because a Grandson is a subclass of a Father
+
+func sayHello(father: Father) {
+    
+    print(father.sayHello())
+}
+
+sayHello(grandson)
 /*:
  Above we have created a new class `Grandson` inheriting from the `Son` class. We want the `sayHello` method of the `Grandson` class to provide a different implementation. We do this by overriding the `sayHello` method defined in the base class `Father`.
  */
@@ -418,7 +427,6 @@ for anyThing in anyThings {
  - The superclass needs to have a method of `makeSound()`
  - The subclasses need to override the `makeSound()` method and print the appropriate sound
  - The `pets` property needs to store both `Dog` and `Cat` instances
-
  * callout(Checkpoint): At this point, you have learned how to leverage inheritance to share and reuse code and how to access the properties, methods and subscripts of a superclass. Overriding a superclass provide a subclass with having it’s custom implementation of a property, method or subscript. You can prevent a class, property, method or subscript from being overridden with he `final` keyword. `AnyObject` and `Any` are used to mark a type or collection of types as unspecified types while using the type check operator and type cast operator to convert the type type into a type you are interested in.
 
  **Keywords to remember:**

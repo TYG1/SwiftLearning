@@ -273,7 +273,7 @@ func counter(closure: (counter: Int) -> Void) -> () -> Void {
     func call() {
         
         closure(counter: counter);
-        ++counter
+        counter += 1
     }
     
     return call

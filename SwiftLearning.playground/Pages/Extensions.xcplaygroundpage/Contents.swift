@@ -115,6 +115,8 @@ extension Int {
 }
 
 let added = Int(numbers: 1, 2, 3, 4, 5, 6, 7, 8, 9)
+let added2 =  Int(numbers: 3, 4, 6)
+
 /*:
  - example: Extension adding a convenience initializer on a class.\
  Below is an example of adding a convenience initializer in an extension for the type `Head`. Since `Head` is a class, the initializer is a convenience initializer, not a designated initializer.
@@ -135,6 +137,10 @@ extension Head {
         self.init(eyes: 2)
     }
 }
+
+let head = Head(eyes: 5)
+
+
 /*:
  - experiment: Delete the `convenience` keyword from the extension `Head`. What does the compiler tell you?
  */

@@ -101,10 +101,22 @@ iterator(cats) { (pet) in
     print("\(pet.name) makes a \(pet.makeSound()) sound.")
 }
 
+<<<<<<< HEAD
 iterator([1, 2, 3, 4, 5]) { (number) in
 
     print("I'm on \(number)")
 }
+=======
+iterator([1, 2, 3]) { (number) in
+
+    print("I'm on \(number)")
+}
+
+iterator(["one", "two", "three"]) { (string) in
+
+    print("I'm on \(string)")
+}
+>>>>>>> b406f302ba0b452c47011ea8bfb178c6973e9f79
 /*:
  ### Multiple Type Parameters and Naming
  When creating generic functions, you can use multiple parameter type names in the generic parameter type names section, the code between the `<...>`. The parameter type names are typically `T` for type, or `Key` or `Value`. You can use one letter names or use upper camel case names for the type name.
@@ -121,6 +133,12 @@ print(thatString)
 
 let thatInt = chooseThatOverThis(1, that: 10)
 print(thatInt)
+<<<<<<< HEAD
+=======
+
+let thisSomething = chooseThatOverThis("This", that: 10)
+print(thisSomething)
+>>>>>>> b406f302ba0b452c47011ea8bfb178c6973e9f79
 /*:
  ## Generic Types
  Swift provides a way for you to create generic types, special types that can work with any type.
@@ -190,8 +208,12 @@ extension Owner {
         
         return items.isEmpty ? nil : items.last
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> b406f302ba0b452c47011ea8bfb178c6973e9f79
     func addPet(item: Pet) {
         
         items.append(item)
@@ -377,7 +399,11 @@ class BuildingKennel: Kennel {
     // ...that boards animals
     var animals = [Animal]()
     
+<<<<<<< HEAD
     // conformance to the Container protocol
+=======
+    // conformance to the Kennel protocol
+>>>>>>> b406f302ba0b452c47011ea8bfb178c6973e9f79
     
     typealias Pet = Animal
     
@@ -408,7 +434,11 @@ class BuildingCatKennel: Kennel {
     // ...that boards cats
     var cats = [Cat]()
     
+<<<<<<< HEAD
     // conformance to the Container protocol
+=======
+    // conformance to the Kennel protocol
+>>>>>>> b406f302ba0b452c47011ea8bfb178c6973e9f79
     
     typealias Pet = Cat
     
@@ -443,13 +473,21 @@ print("Building kennel has \(buildingKennel.count) animals.")
 let catKennel = BuildingCatKennel()
 catKennel.add(snowy)    // a cat
 catKennel.add(snuffles) // a cat
+<<<<<<< HEAD
 // catKennel.add(fido)  // can't add a dog
+=======
+// catKennel.add(fido)  // dogs not allowed
+>>>>>>> b406f302ba0b452c47011ea8bfb178c6973e9f79
 
 print("Cat kennel has \(catKennel.count) cats.")
 
 let same = matt.sameKennels(kennel1: backYardKennel, kennel2: buildingKennel)
 /*:
+<<<<<<< HEAD
  The following will not comple becuase `buildingKennel` and `catKennel` do not pass the constrains in the where clause
+=======
+ The following will not comple because `buildingKennel` and `catKennel` do not pass the constrains in the where clause.
+>>>>>>> b406f302ba0b452c47011ea8bfb178c6973e9f79
  
  `let same2 = matt.sameKennels(kennel1: buildingKennel, kennel2: catKennel)`
  

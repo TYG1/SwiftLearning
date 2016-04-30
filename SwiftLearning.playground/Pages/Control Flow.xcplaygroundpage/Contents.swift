@@ -230,6 +230,7 @@ for index in 0..<5 {
 }
 /*:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### For
 The `for` loop executes a set of statements until a specific condition is met, usually by incrementing a counter each time the loop ends.
 */
@@ -249,6 +250,8 @@ for var index = 0; index < 5; i++ {
 /*:
 =======
 >>>>>>> 078125ac870c5bd2d9ab7b9b36ee1180c31f0e68
+=======
+>>>>>>> b406f302ba0b452c47011ea8bfb178c6973e9f79
 ## Iterating using While Loops
 `while` loops are recommended when the number of iterations is unknown before looping begins.
 */
